@@ -136,7 +136,7 @@ SVGKParser* getCurrentlyParsingParser()
 	
 	if( self.parserExtensions == nil )
 	{
-		self.parserExtensions = [NSMutableArray array];
+		self.parserExtensions = [[NSMutableArray alloc] init];
 	}
 	
 	if( [self.parserExtensions containsObject:extension])
