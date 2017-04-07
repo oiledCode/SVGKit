@@ -118,14 +118,14 @@ SVGKParser* getCurrentlyParsingParser()
 	SVGKParserSVG *subParserSVG = [[SVGKParserSVG alloc] init];
 	SVGKParserGradient* subParserGradients = [[SVGKParserGradient alloc] init];
 	SVGKParserPatternsAndGradients *subParserPatternsAndGradients = [[SVGKParserPatternsAndGradients alloc] init];
-	SVGKParserStyles* subParserStyles = [[SVGKParserStyles alloc] init];
+//	SVGKParserStyles* subParserStyles = [[SVGKParserStyles alloc] init];
 	SVGKParserDefsAndUse *subParserDefsAndUse = [[SVGKParserDefsAndUse alloc] init];
 	SVGKParserDOM *subParserXMLDOM = [[SVGKParserDOM alloc] init];
 	
 	[self addParserExtension:subParserSVG];
 	[self addParserExtension:subParserGradients];
 	[self addParserExtension:subParserPatternsAndGradients]; // FIXME: this is a "not implemente yet" parser; now that we have gradients, it should be deleted / renamed!
-	[self addParserExtension:subParserStyles];
+//	[self addParserExtension:subParserStyles];
 	[self addParserExtension:subParserDefsAndUse];
 	[self addParserExtension:subParserXMLDOM];
 }
